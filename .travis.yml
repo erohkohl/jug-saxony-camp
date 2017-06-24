@@ -6,7 +6,9 @@ sudo: true
 install: true
 
 script:
-  - cd code/jug.saxony.camp.motivation && mvn clean install && ../jug.saxony.camp.jcache && mvn clean install
+  - cd code/jug.saxony.camp.motivation && mvn clean install
+  - cd ../jug.saxony.camp.jcache && mvn clean install
+  - cd ../jug.saxony.camp.infinispan.embedded && mvn clean install
 
 jdk:
   - oraclejdk8

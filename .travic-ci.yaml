@@ -1,0 +1,12 @@
+language: java
+
+dist: trusty
+sudo: true
+
+install: true
+
+script:
+  - mvn clean install
+
+jdk:
+  - oraclejdk8

@@ -5,6 +5,9 @@ sudo: true
 
 install: true
 
+before_script:
+  - cd code/jug.saxony.camp.motivation
+
 script:
   - mvn clean install
 

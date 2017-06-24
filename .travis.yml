@@ -5,11 +5,8 @@ sudo: true
 
 install: true
 
-before_script:
-  - cd code/jug.saxony.camp.motivation
-
 script:
-  - mvn clean install
+  - cd code/jug.saxony.camp.motivation && mvn clean install && ../jug.saxony.camp.jcache && mvn clean install
 
 jdk:
   - oraclejdk8

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jboss-deployment-structure>
+ 	<ear-subdeployments-isolated>false</ear-subdeployments-isolated>	
+  	
+	<deployment>
+		<dependencies>
+			<module name="org.infinispan"/>
+			<module name="org.infinispan.commons"/>
+		</dependencies>
+	</deployment>	
+	
+	
+	<sub-deployment name="jug.saxony.camp.jcache.jar">
+		<dependencies>
+			<module name="org.infinispan"/>
+			<module name="org.infinispan.commons"/>
+		</dependencies>
+	</sub-deployment>
+	
+</jboss-deployment-structure>

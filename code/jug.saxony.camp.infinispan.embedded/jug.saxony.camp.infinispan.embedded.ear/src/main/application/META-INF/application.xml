@@ -1,0 +1,24 @@
+
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
+	version="6">
+	
+	<module>
+        <web>
+           <web-uri>jug.saxony.camp.infinispan.embedded.war-0.0.1-SNAPSHOT.war</web-uri>
+           <context-root>/jug/saxony/camp/infinispan/embedded/one</context-root>
+        </web>
+     </module>
+     
+     <module>
+        <ejb>jug.saxony.camp.infinispan.embedded.jar</ejb>
+     </module>
+	
+	<resource-env-ref>
+		<lookup-name>java:jboss/infinispan/container/myCache/default</lookup-name>
+		<resource-env-ref-name>myCache/default</resource-env-ref-name>
+		<resource-env-ref-type>org.infinispan.Cache</resource-env-ref-type>
+	</resource-env-ref>
+
+</application>

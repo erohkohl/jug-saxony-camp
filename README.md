@@ -14,7 +14,7 @@ public class CacheDemo {
 
   @CacheResult
   public int someExpensiveCalculation(int argOne, String argTwo) {
-	  return new Random().nextInt();
+    return new Random().nextInt();
   }
 }
 ```

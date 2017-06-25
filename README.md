@@ -21,7 +21,7 @@ public class CacheDemo {
 
 Our aim is to temporary store the return value of our business logic. Therefore
 we annotate the method with *@CacheResult*, which is part of the JCache API ([JSR-107](https://www.jcp.org/en/jsr/detail?id=107)).
-The *WildFly* AS provides a out of the box JCache implementation called [*Infinispan*](http://infinispan.org/).
+The *WildFly* AS provides an out of the box JCache implementation called [*Infinispan*](http://infinispan.org/).
 
 #### Caching with JCache API and Infinispan
 
@@ -35,7 +35,7 @@ $ cd code/jug.saxony.camp.jcache
 $ mvn clean install
 ```
 
-Now your able to deploy the EAR on WildFly AS.
+Now you are able to deploy the EAR on WildFly AS.
 
 This servlet demonstrates, that our cache works as expected.
 - http://localhost:8080/jug/saxony/camp/jcache/one/Servlet
@@ -59,7 +59,7 @@ $ cd code/jug.saxony.camp.infinispan.embedded
 $ mvn clean install
 ```
 
-Deploy the EAR to your WildFly instance and again access it's servlet. Redeploy this application and you will see, that the returned values remains the same. When you
+Deploy the EAR to your WildFly instance and again access it's servlet. Redeploy this application and you will see, that the returned values remain the same. When you
 deploy a second instance of the application with a customized servlet, you will observe, that both share the common cache instance.
 
 - http://localhost:8080/jug/saxony/camp/infinispan/embedded/one/Servlet
